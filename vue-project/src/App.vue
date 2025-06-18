@@ -1,20 +1,10 @@
-<script setup>
-import FrontWheel from '@/components/FrontWheel.vue';
-import RearWheel from '@/components/RearWheel.vue';
-</script>
+<script setup></script>
 
 <template>
   <div>
-    <h1 class="front-wheel">Hello Vue!</h1>
-    <h1>Hello Vue!</h1>
-
-    <FrontWheel></FrontWheel>
-    <RearWheel></RearWheel>
-    <div class="car">
-      <FrontWheel />
-      <RearWheel />
-      
-    </div>
+    <router-link to="/component">컴포넌트</router-link>
+    <router-link to="/mustache">mustache template</router-link>
+    <router-view />
 
     <!-- <FrontWheel />
     <FrontWheel> </FrontWheel>
@@ -23,9 +13,4 @@ import RearWheel from '@/components/RearWheel.vue';
   </div>
 </template>
 
-<style scoped>
-.car {
-  display: flex;
-  gap: 10px;
-}
-</style>
+<style scoped></style>

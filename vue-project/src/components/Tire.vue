@@ -8,9 +8,7 @@ const props = defineProps({
 <template>
   <!-- :style 이것은 vue 문법 
         {{  }} <중괄화 두개 겹쳐져 있는 것은 콧수염(Mustache) 표현식 -->
-  <div :style="{ color: props.color }">
-    {{ props.color || 'black' }}BLACK TIRE
-  </div>
+  <div :style="{ color: props.color }">{{ props.color || 'black' }} TIRE</div>
 </template>
 
 <style scoped></style>
