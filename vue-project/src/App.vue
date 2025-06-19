@@ -2,14 +2,16 @@
 
 <template>
   <div>
+    <h1> app.vue</h1>
+
     <router-link to="/component">컴포넌트</router-link>
     <router-link to="/mustache">mustache template</router-link>
     <router-view />
 
-    <!-- <FrontWheel />
+    <FrontWheel />
     <FrontWheel> </FrontWheel>
     <RearWheel />
-    <RearWheel></RearWheel> -->
+    <RearWheel></RearWheel>
   </div>
 </template>
 

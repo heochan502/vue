@@ -6,11 +6,13 @@ import RearWheel from '@/components/RearWheel.vue';
 <template>
   <h1>Hello Vue!</h1>
   <h1>Hello Vue!</h1>
-
-  <FrontWheel></FrontWheel>
-  <RearWheel></RearWheel>
   <div class="car">
+    <FrontWheel></FrontWheel>
     <FrontWheel />
+  </div>
+  <div class="car">
+    <RearWheel></RearWheel>
+
     <RearWheel />
   </div>
 </template>
