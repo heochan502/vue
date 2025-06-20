@@ -1,11 +1,14 @@
 <script setup>
 const message = 'There';
 const messageObj = { name: 'Kim', age: 20 };
+const pageId = 'history';
+let loading = false;
+const parent = 'fruits';
+const child = 'item';
+const fruitList = ['사과', '바나나', '딸기', '배'];
 
-console.log(messageObj); // 이걸하면 값이 다잘나오는데/ 객체에서 객체 요소를 출력 하라는거라서
-console.log(messageObj.toString()); // 이걸하면 객체의 주소값을 줘버린다 객체 자체를 표현어떻게 하냐가 되어서
-
-
+// console.log(messageObj); // 이걸하면 값이 다잘나오는데/ 객체에서 객체 요소를 출력 하라는거라서
+// console.log(messageObj.toString()); // 이걸하면 객체의 주소값을 줘버린다 객체 자체를 표현어떻게 하냐가 되어서
 </script>
 
 <template>
@@ -18,6 +21,23 @@ console.log(messageObj.toString()); // 이걸하면 객체의 주소값을 줘�
   <div>Hello, messageObj <span v-text="messageObj"></span></div>
   <!-- 객체의 값을 쓸려면 아래 처럼 써야한다 -->
   <div>Hello, messageObj.name <span v-text="messageObj.name"></span></div>
+  <!-- id에 들어가는 값은 history  -->
+  <div v-bind:id="pageId">페이지 아이디 div1</div>
+  <!-- v-bind 생략가능  // : 이게 나오면  -->
+  <div :id="pageId">페이지 아이디 div2</div>
+
+  <input type="text" placeholder="아이디" :readonly="loading" />
+  <input type="password" placeholder="비밀번호" :readonly="loading" />
+  <button :disabled="loading">로그인</button>
+  <ul :class="parent">
+    <li :key="idx" v-for="(item, idx) in fruitList" :class="child">
+      {{ item }}
+    </li>
+  </ul>
 </template>
 
-<style scoped></style>
+<style scoped>
+#history {
+  color: red;
+}
+</style>

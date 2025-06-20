@@ -6,6 +6,8 @@
 
     <router-link to="/component">컴포넌트</router-link>
     <router-link to="/mustache">mustache template</router-link>
+    <routerLink to="/Chapter3"> Chapter3 </routerLink>
+    
     <router-view />
 
     <FrontWheel />
