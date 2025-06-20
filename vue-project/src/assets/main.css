@@ -6,6 +6,10 @@
   padding: 2rem;
   font-weight: normal;
 }
+.pointer
+{
+  cursor : pointer;
+}
 
 a,
 .green {
