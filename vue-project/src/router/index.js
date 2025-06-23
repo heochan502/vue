@@ -7,6 +7,8 @@ import Chapter5 from '@/views/Chapter5.vue';
 // import Chapter6 from '@/views/Chapter6.vue';
 
 const router = createRouter({
+  // 전페이지 이동 같은개념 지금 뷰는 화면 전환이지 페이지 전체가 변경되는건 아니다 
+  // 그래서 아래는 전페이지 이동을 가능 하게 하는 방식
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {

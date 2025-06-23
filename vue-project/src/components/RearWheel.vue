@@ -1,5 +1,7 @@
 <script setup>
 import Tire from './Tire.vue';
+import { useCounterStore } from '@/stores/counter.js';
+const counterStore = useCounterStore();
 </script>
 
 <template>
@@ -7,6 +9,7 @@ import Tire from './Tire.vue';
     <span>REAR WHEEL</span>
 
     <Tire color="RED" />
+    <div>TIME: {{ counterStore.count }}</div>
   </div>
 </template>
 
