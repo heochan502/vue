@@ -4,6 +4,7 @@ import Component from '@/views/Component.vue';
 import Chapter3 from '@/views/Chapter3.vue';
 import Chapter4 from '@/views/Chapter4.vue';
 import Chapter5 from '@/views/Chapter5.vue';
+// import Chapter6 from '@/views/Chapter6.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -34,6 +35,12 @@ const router = createRouter({
       path: '/Chapter5',
       // 컴포넌트 뒤에는 위에 import 명
       component: Chapter5,
+    },
+    {
+      // path는 app.vue 에 link to
+      path: '/Chapter6',
+      // 컴포넌트 뒤에는 위에 import 명
+      component: () => import('@/views/Chapter6.vue'),
     },
   ],
 });
