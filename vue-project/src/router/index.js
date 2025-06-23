@@ -42,6 +42,18 @@ const router = createRouter({
       // 컴포넌트 뒤에는 위에 import 명
       component: () => import('@/views/Chapter6.vue'),
     },
+    {
+      // path는 app.vue 에 link to
+      path: '/Chapter7',
+      // 컴포넌트 뒤에는 위에 import 명
+      component: () => import('@/views/Chapter7.vue'),
+    },
+    {
+      // path는 app.vue 에 link to
+      path: '/Chapter8',
+      // 컴포넌트 뒤에는 위에 import 명
+      component: () => import('@/views/Chapter8.vue'),
+    },
   ],
 });
 

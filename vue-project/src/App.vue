@@ -13,6 +13,8 @@ import RearWheel from './components/RearWheel.vue';
     <router-link to="/Chapter4"> Chapter4 </router-link>
     <router-link to="/Chapter5"> 반응형 상태 </router-link>
     <router-link to="/Chapter6"> 컴퓨티드 </router-link>
+    <router-link to="/Chapter7"> 데이터 바인딩 </router-link>
+    <router-link to="/Chapter8"> 훅 Hook </router-link>
 
     <router-view />
     <!-- 
